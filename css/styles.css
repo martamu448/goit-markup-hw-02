@@ -1,0 +1,79 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-white-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/*пункт лого взято з лекції - в дз немає такого */
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover {
+    color: var(--accent-color);
+}
+
+/* все до попереднбого коментаря підлягає перегляду - ховеру немає у дз */
+
+
+/* Site navigation */
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* основний колір тексту 757575 */
+
+/* другорядний колір тексту 212121 */
+
+/* білий колір тексту FFFFFF */
+
+/* акцент 2196F3 */
+
+/*  */
+
+/* колір бекграунду хедера і футера 2F303A */
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+.button {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+
+.button.primery {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+   /* до загальної баттон потім додаються font-size: 26px;
+    padding: 12px; тощо і вводиться ще одна кнопка - у дз немає потреби на перший погляд
+*/
