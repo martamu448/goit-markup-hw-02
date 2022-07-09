@@ -5,6 +5,7 @@
     --primary-white-color: #FFFFFF;
 }
 
+/*Стилі для index.html*/
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -28,12 +29,22 @@ body {
 
 /* Site navigation */
 .site-nav .link {
-    color: var(--accent-color);
+    color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* next rule is making bei myself - warning */
+
+.contacts-item {
+    color: var(--primary-text-color);
 }
 
 /* основний колір тексту 757575 */
@@ -52,6 +63,11 @@ body {
     color: #FFFFFF;
 }
 
+.hero > .button {
+    width: 200px;
+    height: 50px;
+}
+
 .section-title {
     color: var(--title-text-color);
 }
@@ -60,9 +76,13 @@ body {
     color: var(--title-text-color);
 }
 
+/*Стилі для portfolio.html*/
+
 .button {
     color: var(--title-text-color);
     background-color: #F5F4FA;
+    height: 38px;
+    width: auto;
 }
 
 .button.primery {
@@ -77,3 +97,5 @@ body {
    /* до загальної баттон потім додаються font-size: 26px;
     padding: 12px; тощо і вводиться ще одна кнопка - у дз немає потреби на перший погляд
 */
+
+
