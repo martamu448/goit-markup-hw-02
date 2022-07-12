@@ -3,99 +3,207 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #FFFFFF;
+    --primery-background-color: #2F303A;
+    --secondary-background-color: #F5F4FA;
+    
 }
 
-/*Стилі для index.html*/
+/*Основні стилі для index.html та portfolio.html*/
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
 }
 
 .list {
-    list-style: none;
+    list-style: none; 
 }
 
-/*пункт лого взято з лекції - в дз немає такого */
+/* Стилі для логотипу хедера*/
 .logo {
     color: var(--title-text-color);
+    font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+text-decoration: none;
+    
 }
 
-.logo:hover {
+.logo > .accent {
     color: var(--accent-color);
 }
 
-/* все до попереднбого коментаря підлягає перегляду - ховеру немає у дз */
+
+.link {
+    color: var(--primary-text-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-decoration: none; 
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
 
 
-/* Site navigation */
+/* стилі для навігації сайту */
 .site-nav .link {
     color: var(--title-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
+    font-family: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1,14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
 }
 
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
-/* next rule is making bei myself - warning */
-
-.contacts-item {
-    color: var(--primary-text-color);
+/*Стилі для секції hero*/
+.hero {
+background-color: var(--primery-background-color);
 }
-
-/* основний колір тексту 757575 */
-
-/* другорядний колір тексту 212121 */
-
-/* білий колір тексту FFFFFF */
-
-/* акцент 2196F3 */
-
-/*  */
-
-/* колір бекграунду хедера і футера 2F303A */
 
 .hero-title {
-    color: #FFFFFF;
+        color: var(--primary-white-color);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    text-align: center;
+    letter-spacing: 0.06em;
+        text-transform: uppercase;
 }
 
-.hero > .button {
+.hero-button {
     width: 200px;
     height: 50px;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
 }
 
+/*Стилі для секції  */
 .section-title {
+color: var(--title-text-color);
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1,17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden; 
+}
+
+.list-title {
     color: var(--title-text-color);
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
 }
 
 .feature-list .title {
     color: var(--title-text-color);
 }
 
-/*Стилі для portfolio.html*/
-
-.button {
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
-    height: 38px;
-    width: auto;
+.team {
+    background-color: var(--secondary-background-color);
 }
 
-.button.primery {
+/*Стилі для portfolio.html*/
+
+.filter-button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+    height: 38px;
+    width: auto;
+    cursor: pointer
+}
+
+.filter-button:hover {
+    color: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
+
+.filter-button.primery {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
-.button.secondary {
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
-}
-   /* до загальної баттон потім додаються font-size: 26px;
-    padding: 12px; тощо і вводиться ще одна кнопка - у дз немає потреби на перший погляд
+
+   /*  
 */
+
+.examples-title {
+
+}
+
+/*Стилі для футера*/
+.footer {
+    background-color: var(--primery-background-color);
+}
+
+/*Стилі для логотипу футера*/
+.footer > .logo {
+    color: var(--primary-white-color)  
+}
+
+/*Cтилі для адреси*/
+.address {
+font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        
+}
+
+.address-item {
+    color: var(--primary-white-color);
+}
 
 
