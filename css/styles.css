@@ -26,7 +26,7 @@ body {
 /* Стилі для логотипу хедера*/
 .logo {
     color: var(--title-text-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -46,7 +46,7 @@ text-decoration: none;
     font-style: normal;
     font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none; 
 }
@@ -63,7 +63,7 @@ text-decoration: none;
     font-family: inherit;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1,14;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
 }
@@ -82,7 +82,7 @@ background-color: var(--primery-background-color);
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -103,6 +103,7 @@ background-color: var(--primery-background-color);
         letter-spacing: 0.06em;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
+            cursor: pointer
 }
 
 /*Стилі для секції  */
@@ -111,7 +112,7 @@ color: var(--title-text-color);
     font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
-        line-height: 1,17;
+        line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
 }
@@ -129,6 +130,8 @@ clip: rect(0 0 0 0);
 overflow: hidden; 
 }
 
+
+
 .list-title {
     color: var(--title-text-color);
     font-family: 'Roboto';
@@ -138,13 +141,62 @@ overflow: hidden;
         letter-spacing: 0.06em;
 }
 
+.list-text {
+color: var(--primary-text-color);
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+.feature-list {
+     list-style: none;
+}
+
 .feature-list .title {
     color: var(--title-text-color);
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+}
+
+.feature-list .text {
+    color: var(--primary-text-color);
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
 }
 
 .team {
     background-color: var(--secondary-background-color);
 }
+
+.team-list {
+    list-style: none;
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        /* text-align: center; */
+        letter-spacing: 0.03em;
+    }
+
+    .team-list .text {
+        color: var(--primary-text-color);
+        /*font-weight: 400; - delete or not?*/
+            font-size: 16px;
+            line-height: 1.19;
+           /* text-align: center; */
+            letter-spacing: 0.03em;
+            }
+
 
 /*Стилі для portfolio.html*/
 
@@ -175,9 +227,24 @@ overflow: hidden;
 
    /*  
 */
+.examples-list {
+    list-style: none;
+}
 
-.examples-title {
+.examples-list .title {
+color: var(--title-text-color);
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
 
+.examples-list .text {
+color: var(--primary-text-color);
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 /*Стилі для футера*/
