@@ -3,12 +3,13 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #FFFFFF;
-    --primery-background-color: #2F303A;
+    --primary-background-color: #2F303A;
     --secondary-background-color: #F5F4FA;
-    
+    --logo-text-color: #000000;
+    --address-text-color: rgba(255, 255, 255, 0.6);
 }
 
-/*Основні стилі для index.html та portfolio.html*/
+/*Основні стилі для body*/
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -25,18 +26,21 @@ body {
 
 /* Стилі для логотипу хедера*/
 .logo {
-    color: var(--title-text-color);
+    color: var(--logo-text-color);
     font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-text-decoration: none;
-    
+text-decoration: none;  
 }
 
 .logo > .accent {
     color: var(--accent-color);
+}
+
+.logo:hover {
+color: var(--accent-color);
 }
 
 
@@ -57,7 +61,7 @@ text-decoration: none;
 }
 
 
-/* стилі для навігації сайту */
+/*Навігація сайту*/
 .site-nav .link {
     color: var(--title-text-color);
     font-family: inherit;
@@ -72,14 +76,13 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
-/*Стилі для секції hero*/
+/*Секція hero*/
 .hero {
-background-color: var(--primery-background-color);
+background-color: var(--primary-background-color);
 }
 
 .hero-title {
         color: var(--primary-white-color);
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -97,19 +100,14 @@ background-color: var(--primery-background-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-        display: flex;
-        align-items: center;
-        text-align: center;
+    text-align: center;
         letter-spacing: 0.06em;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
             cursor: pointer
 }
 
-/*Стилі для секції  */
+/*Основні стилі для секцій*/
 .section-title {
 color: var(--title-text-color);
-    font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -131,23 +129,7 @@ overflow: hidden;
 }
 
 
-
-.list-title {
-    color: var(--title-text-color);
-    font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-}
-
-.list-text {
-color: var(--primary-text-color);
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    }
+        /*Секція feature*/
 .feature-list {
      list-style: none;
 }
@@ -159,7 +141,6 @@ color: var(--primary-text-color);
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
 }
 
 .feature-list .text {
@@ -168,9 +149,9 @@ font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
 }
 
+/*Секція team*/
 .team {
     background-color: var(--secondary-background-color);
 }
@@ -184,7 +165,7 @@ font-weight: 400;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        /* text-align: center; */
+        text-align: center;
         letter-spacing: 0.03em;
     }
 
@@ -193,13 +174,19 @@ font-weight: 400;
         /*font-weight: 400; - delete or not?*/
             font-size: 16px;
             line-height: 1.19;
-           /* text-align: center; */
+            text-align: center;
             letter-spacing: 0.03em;
+            }
+
+            div {
+                background-color: var(--primary-white-color);
+        width: 270px;
             }
 
 
 /*Стилі для portfolio.html*/
 
+/*Секція filters*/
 .filter-button {
     color: var(--title-text-color);
     background-color: var(--secondary-background-color);
@@ -225,8 +212,7 @@ font-weight: 400;
 }
 
 
-   /*  
-*/
+   /*Секція еxamples*/
 .examples-list {
     list-style: none;
 }
@@ -241,15 +227,16 @@ color: var(--title-text-color);
 
 .examples-list .text {
 color: var(--primary-text-color);
-font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
 
-/*Стилі для футера*/
+
+/*Footer*/
+
 .footer {
-    background-color: var(--primery-background-color);
+    background-color: var(--primary-background-color);
 }
 
 /*Стилі для логотипу футера*/
@@ -257,16 +244,20 @@ font-weight: 400;
     color: var(--primary-white-color)  
 }
 
-/*Cтилі для адреси*/
-.address {
-font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-            font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        
+/*Address*/
+.address-list {
+    list-style: none;
+}
+
+.address-item,
+.mail-item,
+.phone-item {
+    color: var(--address-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .address-item {
