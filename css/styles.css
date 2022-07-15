@@ -24,35 +24,15 @@ body {
     list-style: none; 
 }
 
-/* Стилі для логотипу хедера*/
-.logo {
-    color: var(--logo-text-color);
-    font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-text-decoration: none;  
-}
-
-.logo > .accent {
-    color: var(--accent-color);
-}
-
-.logo:hover {
-color: var(--accent-color);
-}
-
-
 .link {
     color: var(--primary-text-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none; 
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .link:hover,
@@ -60,16 +40,28 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+/* Стилі для логотипу хедера*/
+.logo {
+    color: var(--logo-text-color);
+    font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+text-decoration: none;  
+}
+
+.logo > .accent {
+    color: var(--accent-color);
+}
 
 /*Навігація сайту*/
 .site-nav .link {
     color: var(--title-text-color);
-    font-family: inherit;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+}
+
+.site-nav .link:hover,
+.link:focus {
+    color: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -91,18 +83,37 @@ background-color: var(--primary-background-color);
         text-transform: uppercase;
 }
 
+.button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+        background-color: var(--accent-color);
+}
+
+.primery {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+}
+
 .hero-button {
     width: 200px;
     height: 50px;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
-        letter-spacing: 0.06em;
-            cursor: pointer
+    letter-spacing: 0.06em;
 }
 
 /*Основні стилі для секцій*/
@@ -112,7 +123,6 @@ color: var(--title-text-color);
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
-        letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -128,27 +138,13 @@ clip: rect(0 0 0 0);
 overflow: hidden; 
 }
 
-
         /*Секція feature*/
-.feature-list {
-     list-style: none;
-}
-
-.feature-list .title {
+.feature-title {
     color: var(--title-text-color);
     font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
-}
-
-.feature-list .text {
-    color: var(--primary-text-color);
-font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 /*Секція team*/
@@ -156,31 +152,20 @@ font-weight: 400;
     background-color: var(--secondary-background-color);
 }
 
-.team-list {
-    list-style: none;
+.team-item {
+    background-color: var(--primary-white-color);
+text-align: center;
+line-height: 1.19;
 }
 
-.team-list .title {
+.team-title {
     color: var(--title-text-color);
     font-weight: 500;
         font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
     }
 
-    .team-list .text {
-        color: var(--primary-text-color);
-        /*font-weight: 400; - delete or not?*/
+ .team-text {
             font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-            letter-spacing: 0.03em;
-            }
-
-            div {
-                background-color: var(--primary-white-color);
-        width: 270px;
             }
 
 
@@ -188,36 +173,16 @@ font-weight: 400;
 
 /*Секція filters*/
 .filter-button {
-    color: var(--title-text-color);
-    background-color: var(--secondary-background-color);
-    font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
-    height: 38px;
-    width: auto;
-    cursor: pointer
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   letter-spacing: 0.03em;
+   height: 38px;
+   width: auto;
 }
-
-.filter-button:hover {
-    color: var(--primary-white-color);
-        background-color: var(--accent-color);
-    }
-
-.filter-button.primery {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
-
+ 
    /*Секція еxamples*/
-.examples-list {
-    list-style: none;
-}
-
-.examples-list .title {
+.examples-title {
 color: var(--title-text-color);
     font-weight: 700;
         font-size: 18px;
@@ -225,43 +190,32 @@ color: var(--title-text-color);
         letter-spacing: 0.06em;
 }
 
-.examples-list .text {
-color: var(--primary-text-color);
+.examples-text {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
 
-
 /*Footer*/
-
 .footer {
     background-color: var(--primary-background-color);
 }
 
 /*Стилі для логотипу футера*/
-.footer > .logo {
-    color: var(--primary-white-color)  
+.footer .logo {
+    color: var(--primary-white-color);  
 }
 
 /*Address*/
-.address-list {
-    list-style: none;
-}
-
-.address-item,
-.mail-item,
-.phone-item {
+.address-link,
+.mail-link,
+.phone-link {
     color: var(--address-text-color);
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
-.address-item {
+.address-link {
     color: var(--primary-white-color);
 }
-
 
